@@ -35,11 +35,45 @@ namespace Logger_Of_Dialogue
             // It isn't that complex of a program, but that's okay
 
 
+
+
         // STUFF EACH CLASS NEEDS:::
         // UTILITY
             // first character checker for user input
                 // check AS CAPITAL LETTERS for consistency! (toUpper)
             // isnullorempty
                 // could possibly fold into the first character checker
+
+
+        // GENERAL LOGGER SOFTWARE
+            // access file save/load class
+            // access utility class
+            // access dictionary class
+
+
+        // SAVING/LOADING
+            // has:
+                // default file to create if none exist
+                // default file path if none exist
+
+            // verify if file exists
+                // if file doesn't exist create one
+            // load file
+                // if file doesn't exist don't crash program
+
+
+        // DICTIONARY
+            // instance the dictionary itself 
+            // has:
+                // KEY: person name followed by date
+                    // key is string
+                    // avoids conflicting keys if two things are entered for same date with different people
+                // VALUES : type of 'event', event itself, (add to this if needed)
+
+            // append entries
+            // option to remove entries if desired
+                // search for entry by date
+           
+            
     }
 }
