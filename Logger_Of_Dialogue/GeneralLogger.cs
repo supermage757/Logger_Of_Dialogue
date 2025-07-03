@@ -9,15 +9,31 @@ namespace Logger_Of_Dialogue
     internal class GeneralLogger
     {
 
+        // DEFAULT FILE PATH
+        internal const string DEFAULT_FILE_PATH = "ManippyLogger.json";
+
         // set up the whole dictionary thingy
         // to verify if user wants to load or use new dictionary
         internal bool LoadFromFile()
         {
             string tempChoice;
             Console.WriteLine("Load from previously existing file? (Y/N)");
-            tempChoice = Console.ReadLine();
+            tempChoice = Utility.FirstCharacterChecker(Console.ReadLine());
             // get users choice
-            // if y then get file path
+            // solely for user choice
+            // will handle actual processes elsewhere
+            if (tempChoice == "Y")
+            {
+                // return true
+                return true;
+            }
+            else
+            {
+                // return false
+                return false;
+            }
         }
+
+        // 
     }
 }
